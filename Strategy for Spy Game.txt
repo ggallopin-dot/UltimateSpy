@@ -1,4 +1,4 @@
-Strategy for Spy Game:  URL:
+Strategy for Spy Game:  URL: https://github.com/ggallopin-dot/UltimateSpy.git
 
 Answer the following questions before you work on your portfolio to help you plan :)
 
