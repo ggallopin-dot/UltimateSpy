@@ -1,0 +1,23 @@
+Strategy for Spy Game:  URL:
+
+Answer the following questions before you work on your portfolio to help you plan :)
+
+You do not have to actually follow through with these plans, they're just to help you think about the project.
+
+
+1) What do you think will be the most difficult part of the portfolio?
+
+Creating different levels of difficulty so that they are neither two difficult or too easy. Coordinating the spy's movement's with the level diagram, which can be mapped using Cartesian coordinates (integer based, not decimal based). Parsing the user inputs to make sure what the user/player types in is properly interpreted.
+
+2) How will you handle updating each enemy every time the player moves?
+
+According to the rules mentioned by the assignment, enemy guards automatically move one step forward each turn in the direction they are facing until they run into a wall or other obstacle, which will cause the guard to reverse their direction. By matching up the symbol with the direction of motion on the x/y axis, I can make the guard move one step in the right direction. I can do this by incrementing (decrementing) its position on the x-axis with x - 1 or x + 1, or y - 1 or y + 1. When the guard has to reverse direction, I'll switch the symbol of the guard to its opposite direction.
+
+3) We've learned about operator overloading. How might you use this technique in the portfolio (you're not actually required to do so)?
+
+The ++ and ++ operators have been overloaded in the Cartesian coordinates assignment so they can be applied to an object as well as a variable. Since I plan to use classes in the game, these two versions, obj++ or obj-- for incrementing or decrementing y, and these two versions, ++obj or --obj for incrementing or decrementing x will be useful.
+
+
+4) You'll have to expand this project again later. What design choices can you make now such that future features are easier to implement?
+
+I plan to use classes and functions to model the guards and the spy. For example, I plan to change the level of difficulty by adding or subtracting the number of guards. If I create a Guard class, I can create as many guards as I wish, storing such things as x/y coordinates (position on the game board) and direction of travel. For the spy,a function controlling the spy's movements based on user input might suffice. Of course, there will also have to be a function controlling the display of the current game position.
